@@ -6,6 +6,10 @@ body {
   background-position: left -60px top;
 }
 
+.dough-select {
+  outline: none;
+}
+
 .checked-ingredients-list{
   height: 140px;
 }
