@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="container pt-1">
+    <h1 class="site-heading my-3 text-center text-danger">Pitsa buyurtma qilish.</h1>
+
+    <div class="row my-3">
+      <form class="site-form col-8 border-end border-3 border-danger" action="https://echo.htmlacademy.ru" method="post" id="site-form">
+        <!-- Noni qanday bo'lsin? -->
+        <div class="first-box my-3">
+          <h3 class="heading fs-3 fw-bold my-2 text-danger">Noni qanday bo'lsin?</h3>
+
+          <select class="dough-select fs-5 fw-bold bg-danger border-3 border-danger text-light" name="dough" id="dough"></select>
+        </div>
+        <!-- /Noni qanday bo'lsin?  end -->
+
+        <!-- Kattaligi -->
+        <div class="second-box my-3">
+          <h3 class="heading fs-3 fw-bold my-2 text-danger">Kattaligi</h3>
+
+          <div class="size-select w-50 p-3 d-flex align-items-center justify-content-between"></div>
+        </div>
+        <!-- /Kattaligi   end -->
+
+        <!-- Ustiga nima solaylik? -->
+        <div class="third-box my-3">
+          <h3 class="heading fs-3 fw-bold my-2 text-danger">Ustiga nima solaylik?</h3>
+
+          <ul class="ingredients-list w-50 d-flex flex-wrap align-items-center justify-content-between list-unstyled m-0 p-0"></ul>
+        </div>
+        <!-- /Ustiga nima solaylik?   end -->
+
+        <!-- Qo'shimchalar -->
+        <div class="last-box my-3">
+          <h3 class="heading fs-3 fw-bold my-2 text-danger">Qo'shimchalar</h3>
+
+          <ul class="additions-list w-50 d-flex align-items-center justify-content-between list-unstyled m-0 p-0"></ul>
+        </div>
+        <!-- /Qo'shimchalar   end -->
+      </form>
+
+      <div class="col-4 p-0 ps-5">
+        <p class="dough fs-3 fw-bold m-0 mt-2 text-danger">Non: 
+          <span class="selected-dough fw-normal text-warning"></span>
+        </p>
+
+        <p class="size fs-3 fw-bold m-0 mt-2 text-danger">Kattaligi: 
+          <span class="selected-size fw-normal text-warning"></span>
+        </p>
+
+        <div class="checked-elements-box">
+          <p class="heading fs-3 fw-bold my-2 text-danger">Ustida: </p>
+          <ul class="checked-ingredients-list list-unstyled m-0 p-0 mt-2 text-light">
+          </ul>
+        </div>
+
+        <div class="checked-elements-box">
+          <p class="heading fs-3 fw-bold my-2 text-danger">Qo'shimcha: </p>
+          <ul class="checked-additions-list list-unstyled m-0 p-0 mt-2 text-light">
+          </ul>
+        </div>
+
+        <button class="submit-button mt-4 p-3 bg-danger border-danger text-light fs-3 fw-bold rounded-3" type="submit" form="site-form">Buyurtma berish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
