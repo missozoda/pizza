@@ -22,18 +22,22 @@ let checkedAdditions = [];
 // dough select append option
 for (let i = 0; i < doughs.length; i++){
   let newOption = document.createElement("option");
+  
   newOption.textContent = doughs[i];
   newOption.value = doughs[i];
   elSelectDough.append(newOption);
 }
+
 // size-box append input(radio)
 for (let j = 0; j < sizes.length; j++){
   let newInput = document.createElement("input");
   let newLabel = document.createElement("label");
+
   newInput.setAttribute('type', 'radio');
   newInput.setAttribute('name', 'size');
   newLabel.setAttribute('class', 'fs-5 fw-bold text-warning');
   newInput.setAttribute('class', 'me-2');
+
   newInput.value = sizes[j];
   newLabel.append(newInput, sizes[j]);
   elSizeBox.append(newLabel);
@@ -42,31 +46,37 @@ for (let j = 0; j < sizes.length; j++){
     newInput.checked = true;
   }
 }
+
 //ingredientslist append items 
 for (let k = 0; k < ingredients.length; k++){
   let newInputCheck = document.createElement("input");
   let newLabelCheck = document.createElement("label");
   let newLi = document.createElement("li");
+
   newInputCheck.setAttribute('type', 'checkbox');
   newInputCheck.setAttribute('class', 'me-3');
   newInputCheck.setAttribute('name', 'ingredients');
   newLabelCheck.setAttribute('class', 'fs-5 fw-bold text-warning');
   newLi.setAttribute('class', 'w-50');
+
   newInputCheck.value = ingredients[k];
   newLabelCheck.append(newInputCheck, ingredients[k]);
   newLi.append(newLabelCheck);
   elIngredientsList.append(newLi);
 }
+
 // additionslist append items
 for (let l = 0; l < additions.length; l++){
   let newCheckInput = document.createElement("input");
   let newCheckLabel = document.createElement("label");
   let newLiAdd = document.createElement("li");
+
   newCheckInput.setAttribute('type', 'checkbox');
   newCheckInput.setAttribute('class', 'me-3');
   newCheckInput.setAttribute('name', 'additions');
   newCheckLabel.setAttribute('class', 'fs-5 fw-bold text-warning');
   newLiAdd.setAttribute('class', 'w-50');
+
   newCheckInput.value = additions[l];
   newCheckLabel.append(newCheckInput, additions[l]);
   newLiAdd.append(newCheckLabel);
